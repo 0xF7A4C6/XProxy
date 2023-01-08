@@ -1,0 +1,22 @@
+[filter]
+timeout = 3                       # proxies timeout in seconds.
+scrape_timeout = 10               # timeout for scraping proxies.
+http = true                       # scrape + check http proxies.
+socks4 = false                    # scrape + check socks4 proxies.
+socks5 = false                    # scrape + check socks5 proxies.
+country = ["*"]                   # Keep only the proxies located in the following countries (put "*" to keep all, otherwise put the country-code).
+url_custom = "https://google.com" # website to check content.
+match = "<title>Google</title>"   # match content on the html returned.
+
+[options]
+scrape = true                    # scrape proxies from url.csv.
+threads = 800                    # maximum checking threads.
+scrape_threads = 100             # maximum threads while scraping proxies.
+save_transparent = false         # transparent proxies don't hide your real IP.
+show_dead_proxies = false        # print dead proxies in console, disable it can give better performances
+remove_url_on_error = false      # remove url from csv when program got error while scrapping page (timeout etc..)
+check_scraped_proxies = true     # check freshly scrapped proxies.
+enable_custom_url = true         # enable custom url check.
+
+[dev]
+debug = false                    # show errors
