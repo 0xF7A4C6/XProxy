@@ -65,7 +65,7 @@ func SetTitle(title string) {
 			return
 		}
 
-		syscall.Syscall(proc, 1, uintptr(unsafe.Pointer(syscall.StringToUTF16Ptr(fmt.Sprintf("XProxy - github.com/its-vichy | %s", title)))), 0, 0)
+		syscall.Syscall(proc, 1, uintptr(unsafe.Pointer(syscall.StringToUTF16Ptr(fmt.Sprintf("XProxy - github.com/VichyGopher | %s", title)))), 0, 0)
 	} else {
 		fmt.Printf("\033]0;%s\007", title)
 	}

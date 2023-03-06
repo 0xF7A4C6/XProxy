@@ -18,10 +18,10 @@
 
 ### Requirements:
 - golang 1.18+
-- python 3.X
+- python 3.X+
 
 ### Download:
-- download the lasted compiled version [here](https://github.com/0xVichy/XProxy/releases/tag/lasted).
+- download the lasted compiled version [here](https://github.com/VichyGopher/XProxy/releases/tag/lasted).
 - build from src using `go build .`
 
 ### Known issue:

@@ -93,7 +93,7 @@ func CheckProxy(Proxy string) {
 	if utils.Config.Options.EnableCustomURL {
 		response, err = ProxyReq(utils.Config.Filter.URLCustom, Proxy)
 		if err != nil {
-			utils.Log(fmt.Sprintf("[DEAD] [ELITE: %t] %s", is_elite, prox[1]))
+			utils.Log(fmt.Sprintf("[DEAD] %s", prox[1]))
 			utils.Dead++
 			return
 		}
